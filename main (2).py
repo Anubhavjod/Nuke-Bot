@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix=">",intents=intents)
 bot.remove_command("help")
 with open('config.json') as f:
     data = json.load(f)
-    token = data["TOKEN"]
+    token = data["882297140498542673"]
 @bot.event
 async def on_ready():
     print(f'''
@@ -34,7 +34,7 @@ async def d(ctx,channel_id="all"):
   await ctx.message.delete()
   if channel_id == "all":
     for channel in ctx.guild.channels:
-      if channel.id != 834134636678479902:
+      if channel.id != 882297140498542673:
         await channel.delete()
       else:
         continue
